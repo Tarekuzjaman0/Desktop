@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-    <div class="max-w-2xl mx-auto mt-4 p-4 bg-white shadow-lg rounded-lg">
+    <div class="max-w-2xl mx-auto mt-4 p-2 bg-white shadow-lg rounded-lg">
         <div class="bg-green-600 text-white p-4 rounded-t-lg text-center text-lg font-bold">
             জৈব রসায়ন
         </div>
@@ -46,8 +46,8 @@
             container.innerHTML = "";
             questions.filter(q => q.question.includes(filter)).forEach(q => {
                 const questionHTML = `
-                    <div class='p-4 border rounded-lg bg-gray-50'>
-                        <p class='text-lg font-semibold'>${q.question}</p>
+                    <div class='p-2 border rounded-sl bg-gray-50'>
+                        <p class='text-sl font-semibold'>${q.question}</p>
                         <div class='grid grid-cols-2 gap-2 mt-2'>
                             ${q.options.map(opt => `<button class='p-2 bg-white border rounded-md'>${opt}</button>`).join('')}
                         </div>
